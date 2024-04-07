@@ -1,9 +1,3 @@
----
-noteId: "1bebb480f47f11eea17ae738b13bf5c5"
-tags: []
-
----
-
 # Experimental evaluation in the article Embedding-based-data-matching-for-disparate-data-sources (DAWAK 2024)
 
 ***Abstract of the paper***
@@ -24,12 +18,10 @@ We deploy our approach and its variations using PyTorch version 1.6.0a0+9907a3e 
 
 ***Datasets***
 
-In our experiments, we exploited the potential of five dataset categories, as described in the ["Valentine"](https://zenodo.org/records/5084605). These collections range from matching simple structured datasets to more complex configurations. 
+In our experiments, we exploited the potential of five dataset categories, as described in the ["Valentine"](https://zenodo.org/records/5084605). These collections range from matching simple structured datasets to more complex configurations.
 
 
 ***Effectiveness & Stability***
-
-***Stability***
 
 A detailed examination of algorithmic stability was carried out through a random selection of 10 unique datasets, which were then tested in several configurations of different hyperparameter values. Random walks have an impact on graphs projection and may affect performance. We focused on three important hyperparameters that influence the generation of random walks in our algorithm (walk length, walk Strategy and number of sentences) and then applied a grid-search on their values, resulting in 12 configurations. To ensure a complete and reliable evaluation, each configuration was run 10 times.
 
