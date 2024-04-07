@@ -1,0 +1,158 @@
+[
+    {
+        "0": {
+            "walk_strategy": "deepwalk",
+            "walk_length": 700,
+            "dimension": 64,
+            "window": 3,
+            "learning_methd": "skipgram",
+            "training_algorithms": "word2vec",
+            "n_sentences": 10000,
+            "simlarity_value": 0.75,
+            "cdt_similarity": 0.8
+        }
+    },
+    {
+        "1": {
+            "walk_strategy": "deepwalk",
+            "walk_length": 700,
+            "dimension": 64,
+            "window": 3,
+            "learning_methd": "skipgram",
+            "training_algorithms": "word2vec",
+            "n_sentences": 15000,
+            "simlarity_value": 0.75,
+            "cdt_similarity": 0.8
+        }
+    },
+    {
+        "2": {
+            "walk_strategy": "deepwalk",
+            "walk_length": 1000,
+            "dimension": 64,
+            "window": 3,
+            "learning_methd": "skipgram",
+            "training_algorithms": "word2vec",
+            "n_sentences": 10000,
+            "simlarity_value": 0.75,
+            "cdt_similarity": 0.8
+        }
+    },
+    {
+        "3": {
+            "walk_strategy": "deepwalk",
+            "walk_length": 1000,
+            "dimension": 64,
+            "window": 3,
+            "learning_methd": "skipgram",
+            "training_algorithms": "word2vec",
+            "n_sentences": 15000,
+            "simlarity_value": 0.75,
+            "cdt_similarity": 0.8
+        }
+    },
+    {
+        "4": {
+            "walk_strategy": "node2vec",
+            "walk_length": 700,
+            "dimension": 64,
+            "window": 3,
+            "learning_methd": "skipgram",
+            "training_algorithms": "word2vec",
+            "n_sentences": 10000,
+            "simlarity_value": 0.75,
+            "cdt_similarity": 0.8
+        }
+    },
+    {
+        "5": {
+            "walk_strategy": "node2vec",
+            "walk_length": 700,
+            "dimension": 64,
+            "window": 3,
+            "learning_methd": "skipgram",
+            "training_algorithms": "word2vec",
+            "n_sentences": 15000,
+            "simlarity_value": 0.75,
+            "cdt_similarity": 0.8
+        }
+    },
+    {
+        "6": {
+            "walk_strategy": "node2vec",
+            "walk_length": 1000,
+            "dimension": 64,
+            "window": 3,
+            "learning_methd": "skipgram",
+            "training_algorithms": "word2vec",
+            "n_sentences": 10000,
+            "simlarity_value": 0.75,
+            "cdt_similarity": 0.8
+        }
+    },
+    {
+        "7": {
+            "walk_strategy": "node2vec",
+            "walk_length": 1000,
+            "dimension": 64,
+            "window": 3,
+            "learning_methd": "skipgram",
+            "training_algorithms": "word2vec",
+            "n_sentences": 15000,
+            "simlarity_value": 0.75,
+            "cdt_similarity": 0.8
+        }
+    },
+    {
+        "8": {
+            "walk_strategy": "metapath2vec",
+            "walk_length": 700,
+            "dimension": 64,
+            "window": 3,
+            "learning_methd": "skipgram",
+            "training_algorithms": "word2vec",
+            "n_sentences": 10000,
+            "simlarity_value": 0.75,
+            "cdt_similarity": 0.8
+        }
+    },
+    {
+        "9": {
+            "walk_strategy": "metapath2vec",
+            "walk_length": 700,
+            "dimension": 64,
+            "window": 3,
+            "learning_methd": "skipgram",
+            "training_algorithms": "word2vec",
+            "n_sentences": 15000,
+            "simlarity_value": 0.75,
+            "cdt_similarity": 0.8
+        }
+    },
+    {
+        "10": {
+            "walk_strategy": "metapath2vec",
+            "walk_length": 1000,
+            "dimension": 64,
+            "window": 3,
+            "learning_methd": "skipgram",
+            "training_algorithms": "word2vec",
+            "n_sentences": 10000,
+            "simlarity_value": 0.75,
+            "cdt_similarity": 0.8
+        }
+    },
+    {
+        "11": {
+            "walk_strategy": "metapath2vec",
+            "walk_length": 1000,
+            "dimension": 64,
+            "window": 3,
+            "learning_methd": "skipgram",
+            "training_algorithms": "word2vec",
+            "n_sentences": 15000,
+            "simlarity_value": 0.75,
+            "cdt_similarity": 0.8
+        }
+    }
+]
