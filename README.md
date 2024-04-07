@@ -29,11 +29,13 @@ In our experiments, we exploited the potential of five dataset categories, as de
 
 ***Effectiveness & Stability***
 
-A detailed examination of algorithmic stability was carried out through a random selection of 10 unique datasets, which were then tested in several configurations of different hyperparameter values in table 2. As shown by [19], random walks have an impact on graphs projection and may affect performance. We focused on three important hyperparameters that influence the generation of random walks in our algorithm (walk length, walk Strategy and number of sentences) and then applied a grid-search on their values, resulting in 12 configurations. To ensure a complete and reliable evaluation, each configuration was run 10 times.
+***Stability***
 
-To sum up, our efficiency experiments represent a total of 35616 runs: 371 data sets x 96 hyperparameter configurations. 
-And for noise, we count a total of 1200 runs: 10 datasets x 12 configurations x 10 runs.
-The results of our experiments and their execution times are presented in the files ablation_effectiveness_stability.csv and noise.csv.
+A detailed examination of algorithmic stability was carried out through a random selection of 10 unique datasets, which were then tested in several configurations of different hyperparameter values. Random walks have an impact on graphs projection and may affect performance. We focused on three important hyperparameters that influence the generation of random walks in our algorithm (walk length, walk Strategy and number of sentences) and then applied a grid-search on their values, resulting in 12 configurations. To ensure a complete and reliable evaluation, each configuration was run 10 times.
+
+To sum up, our effectiveness experiments represent a total of 35616 runs: 371 data sets x 96 hyperparameter configurations. 
+And for stability, we count a total of 1200 runs: 10 datasets x 12 configurations x 10 runs.
+The results of our experiments and their execution times are presented in the folders effectiveness and stability.
 
 This rigorous approach is essential for evaluating the reliability of an algorithm
 and its ability to provide consistent results for a given dataset and configuration,
@@ -46,4 +48,17 @@ The ablation study aimed to evaluate two approaches: the combined approach and t
 Our experiments were conducted on different categories of datasets, incorporating noise levels up to "N2". The choice of 'N2' as the threshold was motivated by the noticeable drop in average F1 scores observed with more complex noise types above this level. This strategy allowed us to evaluate the response of two approaches to perturbed data(addition of prefixes/suffixes, abbreviations). Using 96 different configurations, we examined and contrasted the performance of the two methods. 
 
 To sum up, our ablation experiments represent a total of 35616 runs: 371 data sets x 96 hyperparameter configurations. 
-The results of our experiments and their execution times are presented in the  ablation_effectiveness_stability.csv file.
+The results of our experiments and their execution times are presented in the ablation folder.
+
+**Noise**
+
+Introducing noise into dataset categories is essential for simulating real-world
+conditions, as data often contains errors and inconsistencies. By simulating noise
+across all datasets, we can better prepare algorithms to handle real-world data
+imperfections, enhancing their robustness and reliability for practical applications.
+in the folder Noise, we provide results of the impact of different noise
+levels on data matching performance across all configurations of the ChEMBL
+dataset category. The table shows noise level, from ’N0’ (which may denote
+’clean’) to ’N5’, signaling progressively higher levels of noise. There is a marked
+decline in F1 Score as noise increases, from a high average of 0.95 at ”N0” to
+a zero average of 0.0 at ”N5”.
